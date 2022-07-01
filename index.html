@@ -11,10 +11,112 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
     crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Mali:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/lab-01-auswitch/images/cat.png">
+  <style>
+  .aii{
+      font-family: 'Kanit', sans-serif;
+      font-family: 'Mali', cursive;
+    }
+  .square 
+  {
+    background-color:darkslateblue;
+    border: 5px solid brown;
+    margin: 50px;
+    padding: 50px;
+    border-radius: 20px;
+    color: aliceblue;
+    width: 100vw;
+    height: 75vw;
+  }
+  
+  </style>
 </head>
 
-<body>
 
+<div class="d-flex">
+  <body style="background-color:lightsalmon;">
+  <div class="square aii">
+    <div class="d-flex mx-auto align-items-center">
+      <u class="ms-auto me-auto" style="font-size: 50px; color:palegoldenrod;">Welcome to Switch Website </u> 
+    </div>
+    <!--bar-->
+    <div class="hstack h-20 gap-1 d-flex mx-auto align-items-center mt-3">
+      <button type="button" class="btn btn-warning btn-outline-success me-auto ms-auto" data-bs-toggle="modal" data-bs-target="#exampleModal" class="ms-auto" style="color:indigo; font-size: 40px;" font-size: 30px;">Home 👀</button>
+      <a href="experience.html"><button type="button" class="btn btn-warning btn-outline-danger me-auto ms-auto" style="color:indigo; font-size: 40px;" >Experience</button></a>
+      <a class="me-auto ms-auto" href="contact.html"><button type="button" class="btn btn-warning btn-outline-info" style="color:indigo; font-size: 40px; " >Contact</button></a>
+      <!--modal-->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                  <h5 style="color: orangered; font-size: 30px;"class="modal-title" id="exampleModalLabel">Oh No!</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+            <div class="modal-body">
+                <p style="color: slateblue; font-size: 20px;">You are already in this page.</p>
+            </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                 </div>
+               </div>
+            </div>
+    <!--images-->
+    <div>
+      <img src="/lab-01-auswitch/images/inumaki.jpeg"
+      width="150" 
+      height="150"
+      style="object-fit: cover;  "
+      class="rounded-circle d-flex justify-content-center me-auto ms-auto mt-3">
+    </div>
+
+    <!--letter-->
+    <div class="vstack">
+      <span class="fw-bold ms-auto me-auto " style="color:salmon; font-size: 50px; align-items: center;">Au Switch</span>
+      <span class="ms-auto me-auto"style="font-size: 25px;" >Hi, My name is Switch. </span>
+      <span class="ms-auto me-auto" style="font-size: 25px;" > I graduated from Samut Sakhon Wittayalai School. I hate Sunday because tomorrow will be Monday. </span>
+      <span class="ms-auto me-auto fw-bold mt-3 " style="font-size: 30px; color:palegreen;" >My Skills</span>
+    </div>
+      <!--card-->
+      <div class="row row-cols-1 row-cols-md-3 g-4 mt-2">
+        <div class="col ">
+          <div class="card h-100 bg-success mb-3">
+            <img src="/lab-01-auswitch/images/korean.jpeg" height="250" class="card-img-top" .">
+            <div class="card-body">
+              <h5 class="card-title" style="color:khaki;">Korean Language</h5>
+              <p class="card-text" style="color:wheat">because I like to watch Korean dramas series very much, so I learned Korean Language.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 bg-danger mb-3">
+            <img src="/lab-01-auswitch/images/cc.png" height="250"  class="card-img-top" >
+            <div class="card-body">
+              <h5 class="card-title" style="color: whitesmoke;">C++ Language Programming</h5>
+              <p class="card-text" style="color:azure;">I can tell you a short word about C++ language that is very difficult language. since I was born in the world.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 bg-info mb-3">
+            <img src="/lab-01-auswitch/images/java.png" height="250" class="card-img-top" >
+            <div class="card-body">
+              <h5 class="card-title" style="color:saddlebrown;">Java Language Programming</h5>
+              <p class="card-text" style="color:midnightblue;">I learning this language in Data Structure Subject, I hope it easier than C++ language.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  
 
 </body>
 
